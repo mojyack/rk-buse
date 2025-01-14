@@ -9,4 +9,4 @@
 	url = https://github.com/mojyack/cutil.git
 [submodule "submodules/xrock"]
 	path = submodules/xrock
-	url = https://github.com/mojyack/xrock.git
+	url = https://github.com/xboot/xrock.git
