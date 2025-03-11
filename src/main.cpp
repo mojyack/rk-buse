@@ -23,7 +23,7 @@ auto main(const int /*argc*/, const char* const* /*argv*/) -> int {
     ensure(xrock_init(&ctx));
     auto flash_info = flash_info_t();
     ensure(rock_flash_detect(&ctx, &flash_info));
-    print("detected ", flash_info.sector_total, " sectors(", flash_info.sector_total * 512 / 1024 / 1024, "MB)");
+    std::println("detected {} sectors({}MB)", flash_info.sector_total, flash_info.sector_total * 512 / 1024 / 1024);
 
     auto op        = EDLOperator{};
     op.ctx         = &ctx;
